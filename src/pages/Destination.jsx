@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Outlet, useNavigate, Link, useParams } from "react-router-dom";
-
 import DestinationContent from "../Components/DestinationContent";
-
 import planets from "../data/data.json";
 
 const Destination = () => {

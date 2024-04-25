@@ -1,55 +1,43 @@
 import React from "react";
 
-const Destination = () => {
+// import SideMenu from "./SideMenu";
+
+const Header = () => {
   return (
-    <section className="background destination-page-container">
-      <div className="destination-page-wrapper">
-        <div className="destination-page-content-left">
-          <div className="destination-page-content-left-1">
+    <section className="header-container">
+      <nav className="nav-container">
+        <div className="logo">
+          <img src="assets/shared/logo.svg" alt="logo" />
+        </div>
+        <div className="nav-line"></div>
+        <div className="nav-links-container">
+          <div className="nav-link-item show" to="/" id="home">
+            <span>00</span>
+            <div className="nav-link">Home</div>
+          </div>
+
+          <div className="nav-link-item show" to="destination" id="destination">
             <span>01</span>
-            <p>Pick your destination</p>
+            <div className="nav-link">Destination</div>
           </div>
-          <div className="destination-page-content-left-2">
-            <img src="/assets/destination/image-moon.png" alt="moon" />
+
+          <div className="nav-link-item show" to="/crew" id="crew">
+            <span>02</span>
+            <div className="nav-link">Crew</div>
+          </div>
+
+          <div className="nav-link-item show" to="/technology" id="technology">
+            <span>03</span>
+            <div className="nav-link">Technology</div>
+          </div>
+
+          <div className="nav-link-item hidden menu" id="hamburger">
+            <img src="/assets/shared/icon-hamburger.svg" alt="menu" />
           </div>
         </div>
-
-        <div className="destination-page-content-right">
-          <div className="destination-page-content-right-nav">
-            <div className="destination-page-content-nav-item">Moon</div>
-            <div className="destination-page-content-nav-item">Mars</div>
-            <div className="destination-page-content-nav-item">Titan</div>
-            <div className="destination-page-content-nav-item">Europa</div>
-          </div>
-          <div className="destination-page-content-right-1">
-            <h1>Moon</h1>
-          </div>
-
-          <div className="destination-page-content-right-2">
-            <p>
-              {" "}
-              See our planet as you’ve never seen it before. A perfect relaxing
-              trip away to help regain perspective and come back refreshed.
-              While you’re there, take in some history by visiting the Luna 2
-              and Apollo 11 landing sites.
-            </p>
-          </div>
-          <div className="destination-page-content-line"></div>
-          <div className="destination-page-content-right-3">
-            <div>
-              <span>Avg. Distance</span>
-              <p>384,400 km</p>
-            </div>
-
-            <div>
-              <span>Est. travel time</span>
-              <p> 3 days</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      </nav>
     </section>
   );
 };
 
-export default Destination;
+export default Header;
